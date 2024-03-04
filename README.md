@@ -18,27 +18,27 @@
       **Objective**: Understand customer purchasing habits by calculating the total number of unique invoices per customer.
       **SQL Query**: Utilizes count and distinct functions to count the number of unique invoices for each customer.
       **Implementation**: Provides insights into customer loyalty and engagement for targeted marketing strategies.
-  ###**5. Average Order Value**
+  ### **5. Average Order Value**
       **Objective**: Calculate the average order value to optimize sales strategies.
       **SQL Query**: Summarizes the total value of each invoice (order) using the sum function.
       **Implementation**: Offers insights into customer spending patterns and transactional behaviors.
-  ###**6. The Most Frequent Product Sold in Each Country**
+  ### **6. The Most Frequent Product Sold in Each Country**
       **Objective**: Identify the most popular products in each country to understand international sales trends.
       **SQL Query**: Utilizes window functions and subqueries to analyze sales data by country and stock code.
       **Implementation**: Reveals cross-border preferences and market trends.
-  ###**7. Analyzing Sales Trends Using Lag**
+  ### **7. Analyzing Sales Trends Using Lag**
       **Objective**: Delve into sales dynamics over time using sophisticated lag functions.
       **SQL Query**: Examines changes in quantity sold relative to previous transactions to identify patterns and fluctuations.
       **Implementation**: Provides insights into demand fluctuations across different product categories and regions.
-  ###**Customer Segmentation**
+  ### **Customer Segmentation**
       **Objective**: Implement a Monetary model for customer behavior and segment customers based on specific groups.
       **Implementation**: Utilizes RFM (Recency, Frequency, Monetary) model to segment customers and offers targeted marketing strategies.
-  ###**Analysis of Customer Purchase Patterns**
+  ### **Analysis of Customer Purchase Patterns**
       **Objective**: Analyze customer purchase patterns by identifying the maximum consecutive days between purchases for each customer.
       **Implementation**: Utilizes SQL queries to gain insights into customer activity and loyalty.
-  ###**Query Purpose**
+  ### **Query Purpose**
       **Objective**: Calculate the average number of days it takes for customers to reach a spending threshold of 250 units or more from their first purchase date.
       **Implementation**: Utilizes Common Table Expressions (CTEs) and main query to derive insights into customer spending behavior.
-###Expected Outcome:
+### Expected Outcome:
     The expected outcome of running these SQL queries is to obtain valuable insights into various aspects of business operations, including revenue analysis, sales trends, customer behavior, and purchase patterns. These insights can then be used for decision-making, strategic planning, and targeted marketing efforts.
     
