@@ -1,17 +1,21 @@
 --Question one:
     --query one:
+
 select distinct customer_id,sum(quantity*price) over(partition by customer_id) as total_revenue 
 from tableretail;
 -------------------------------------------
     --Query Two:
+
 select substr(invoicedate,1,7)as year_month,
 sum(quantity*price)over (partition by substr(invoicedate,1,7)) as total_revenue from tableretail;
 -----------------------------------------------------
     --Query Three:
+
 select stockcode,sum(quantity) over(partition by stockcode) as total_quantity_sold from
 tableretail order by total_quantity_sold desc;
 ----------------------------
     --Query Four:
+
 select distinct
  customer_id ,
  count(distinct invoice) over (partition by customer_id)as total_pur
@@ -19,11 +23,13 @@ select distinct
  order by total_pur desc;
 --------------------------------------
     --Query Five:
+
 select distinct invoice,sum(quantity*price) over (partition by invoice) as orde_value
  from tableretail
  order by orde_value desc;
 ----------------------------------------
-    --Query Six
+    --Query Six:
+
 with CountryProductCounts as (
  select
  country,
@@ -45,6 +51,7 @@ where
  rn = 1;
 ------------------------------
     --Query seven:
+
 select
  country,
  stockcode,
@@ -57,7 +64,8 @@ order by
  country, stockcode, invoicedate;
  ---------------------------------------
 --Question One:
---b
+--b:
+
 WITH customer_purchase_data AS (
 SELECT
 customer_id,
@@ -133,7 +141,8 @@ FROM customer_rfm_score ;
 
 ---------------------------
 --Question Two:
---a
+--a:
+
 with purchase_dates as (
 select
 cust_id,
@@ -158,7 +167,7 @@ date_diffs
 group by
 cust_id;
 -------------------------------
---B
+--B:
 with purchase_dates as (
  select
  cust_id,
