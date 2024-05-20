@@ -176,7 +176,12 @@ with purchase_dates as (
  my_table
  group by
  cust_id
-),
+),/*SELECT
+ cust_id,
+ first_value(calendar_dt) over (partition by cust_id order by calendar_dt) as first_purchase_date
+FROM
+ my_table;*/ 
+
 cumulative_spending as (
  select
  cust_id,
